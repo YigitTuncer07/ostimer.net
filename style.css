@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(74, 84, 74)
+}
+h1 {
+    text-align: center;
+    margin-bottom: 160px;
+}
+p {
+    font-size: 50px;
+    text-align: center;
+}
+
+#seconds {
+    margin: auto;
+}
+#tens {
+    margin: auto;
+}
+
