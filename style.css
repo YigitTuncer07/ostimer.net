@@ -16,4 +16,6 @@ p {
 #tens {
     margin: auto;
 }
-
+span {
+    display: inline-flex;
+}

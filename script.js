@@ -1,6 +1,9 @@
-let seconds = 0;
-let tens = 0;
-let minutes = 0;
+let seconds1 = 0;
+let seconds2 = 0;
+let tens1 = 0;
+let tens2 = 0;
+let minutes1 = 0;
+let minutes2 = 0;
 let pressed = false;
 let interval;
 
@@ -19,34 +22,82 @@ document.addEventListener('keyup', event => {
 });
 
 function startTime(){
-    tens++;
-    if (tens == 60){
-        document.getElementById("tens").textContent = "00";
-        tens = 0;
-        seconds++;
-        if (seconds == 60){
-            document.getElementById("seconds").textContent = "00";
-            seconds =0;
-            minutes++;
-            document.getElementById("minutes").textContent = minutes;
+    tens2++;
+    if (tens2 == 10){
+        tens2 = 0;
+        document.getElementById("tens2").textContent = tens2;
+
+
+        tens1++;
+        if (tens1 == 10){
+            tens1 = 0;
+            document.getElementById("tens1").textContent = tens1;
+
+            
+            seconds2++;
+            if (seconds2 == 10){
+                seconds2 = 0;
+                document.getElementById("seconds2").textContent = seconds2;
+
+
+                seconds1++;
+                if (seconds1 == 6   ){
+                    seconds1 = 0;
+                    document.getElementById("seconds1").textContent = seconds1;
+
+
+                    minutes2++;
+                    if (minutes2 == 10){
+                        minutes2 = 0;
+                        document.getElementById("minutes2").textContent = minutes2;
+
+
+                        minutes1++;
+                        if (minutes1 == 6){
+                            minutes1 = 0;
+                            document.getElementById("minutes1").textContent = minutes1;
+
+                        } else {
+                            document.getElementById("minutes1").textContent = minutes1;
+
+                        }
+
+                    } else {
+                        document.getElementById("minutes2").textContent = minutes2;
+                    }
+
+                } else {
+                    document.getElementById("seconds1").textContent = seconds1;
+
+                }
+
+            } else {
+                document.getElementById("seconds2").textContent = seconds2;
+            }
 
         } else {
-            document.getElementById("seconds").textContent = seconds;
+            document.getElementById("tens1").textContent = tens1;
         }
 
     } else {
-        document.getElementById("tens").textContent = tens;
-    }    
+        document.getElementById("tens2").textContent = tens2;
+    }
+    
     
 }
 
 function reset(){
-    tens = 0;
-    seconds = 0;
-    minutes = 0;
-    document.getElementById("tens").textContent = "00";
-    document.getElementById("seconds").textContent = "00";
-    document.getElementById("minutes").textContent = "00";
+    tens2 = 0;
+    tens1 = 0;
+    seconds2 = 0;
+    seconds1 = 0;
+    minutes2 = 0;
+    minutes1 = 0;
 
-
+    document.getElementById("tens1").textContent = "0";
+    document.getElementById("tens2").textContent = "0";
+    document.getElementById("seconds1").textContent = "0";
+    document.getElementById("seconds2").textContent = "0";
+    document.getElementById("minutes1").textContent = "0";
+    document.getElementById("minutes2").textContent = "0";
 }
