@@ -5,17 +5,15 @@ h1 {
     text-align: center;
     margin-bottom: 160px;
 }
-p {
+#mainTimer {
     font-size: 50px;
     text-align: center;
+    margin-bottom: 0;
 }
 
-#seconds {
-    margin: auto;
-}
-#tens {
-    margin: auto;
-}
-span {
-    display: inline-flex;
+#subTimer{
+    font-size: 30px;
+    text-align: center ;
+
+    margin-top: 0;
 }
