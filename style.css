@@ -3,13 +3,16 @@ body {
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 160px;
+
+    margin-left: 575px;
+    display: inline;
+
 }
 
 #mainTimer {
     font-size: 50px;
     text-align: center;
+    margin-top: 150px;
     margin-bottom: 0;
 }
 
@@ -18,4 +21,11 @@ h1 {
     text-align: center;
     margin-top: 0;
     display: none;
+}
+
+#infoButton {
+    display: inline;
+    height: 20px;
+    width: 20px;
+    margin-left: 500px;
 }
