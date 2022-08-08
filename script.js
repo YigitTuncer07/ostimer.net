@@ -12,6 +12,13 @@ let state = 0;
 let interval;
 let interval1;
 
+
+
+function toggleSettings() {
+    alert("blabla");
+
+}
+
 document.addEventListener('keyup', event => {
 
     if (event.code == 'Space') {
