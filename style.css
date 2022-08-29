@@ -2,11 +2,6 @@ body {
     background: #39CCCC;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 160px;
-}
-
 #mainTimer {
     font-size: 50px;
     text-align: center;
